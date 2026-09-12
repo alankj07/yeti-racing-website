@@ -1,0 +1,567 @@
+{
+  "meta": {
+    "site_title": "Yeti Racing",
+    "site_url": "https://yetiracing.cusat.co.in/",
+    "og_description": "Yeti Racing is the official Formula Student team of the School of Engineering at Cochin University of Science and Technology (CUSAT).",
+    "og_image": "https://yetiracing.cusat.co.in/assets/logo2.webp",
+    "og_image_alt": "Yeti Racing Logo",
+    "og_image_width": 1200,
+    "og_image_height": 630,
+    "og_type": "website",
+    "og_site_name": "Yeti Racing",
+    "twitter_card": "summary_large_image",
+    "favicon": "/assets/logo1.png",
+    "framework": "Next.js",
+    "fonts_used": ["Orbitron", "ZenDots", "Rajdhani", "Goldman"],
+    "logo_url": "https://ik.imagekit.io/r70knk9pu/logo1.png?updatedAt=1739006550479",
+    "logo2_url": "https://yetiracing.cusat.co.in/assets/logo2.webp"
+  },
+
+  "navigation": {
+    "links": [
+      { "label": "Home",       "href": "/" },
+      { "label": "About us",   "href": "/team" },
+      { "label": "Team",       "href": "/subsystem" },
+      { "label": "Gallery",    "href": "/gallery" },
+      { "label": "Sponsors",   "href": "/sponsors" },
+      { "label": "Contact us", "href": "#footer" }
+    ],
+    "mobile_menu_items": ["About us", "Team", "Gallery", "Sponsors", "Contact us"]
+  },
+
+  "pages": {
+
+    "home": {
+      "url": "https://yetiracing.cusat.co.in/",
+      "sections": {
+
+        "hero": {
+          "headline": "Yeti Racing",
+          "tagline": "Welcome to the official website of Yeti Racing CUSAT - the first ever team from Kerala to win Formula Bharat.",
+          "highlight_banner": "First ever team from Kerala to win Formula Bharat championship title — Formula Bharat 2025, Combustion Category",
+          "hero_stats": [
+            { "label": "OVERALL",        "rank": 1, "competition": "Formula Bharat 2025" },
+            { "label": "ENDURANCE RACE", "rank": 1, "competition": "Formula Bharat 2025" },
+            { "label": "DYNAMICS",       "rank": 1, "competition": "Formula Bharat 2025" },
+            { "label": "EFFICIENCY",     "rank": 1, "competition": "Formula Bharat 2025" }
+          ]
+        },
+
+        "about_summary": {
+          "heading": "About us - Yeti Racing CUSAT",
+          "body": "Yeti Racing, a leading force in Formula Student vehicle construction from Cochin University of Science and Technology, Kochi, embodies dedication and collaboration, with a strong presence in prestigious competitions like SAE SUPRA, FFS INDIA, and FORMULA BHARAT. Since our debut in SUPRA 2017, we've made significant strides in automotive engineering excellence.",
+          "cta_button": { "label": "Know more", "href": "/team#achievements" }
+        },
+
+        "competition_cards": [
+          {
+            "title": "FFS India 2017",
+            "results": [
+              { "category": "Overall", "rank": 7 },
+              { "category": "Design",  "rank": 4 },
+              { "category": "Sales",   "rank": 5 }
+            ]
+          },
+          {
+            "title": "SAE SUPRA 2024",
+            "results": [
+              { "category": "Overall",   "rank": 9 },
+              { "category": "Endurance", "rank": 6 },
+              { "category": "Cost",      "rank": 3 }
+            ]
+          },
+          {
+            "title": "Formula Bharat 2025",
+            "results": [
+              { "category": "Overall",    "rank": 1 },
+              { "category": "Dynamics",   "rank": 1 },
+              { "category": "Efficiency", "rank": 1 }
+            ]
+          }
+        ],
+
+        "support_cta": {
+          "heading": "Join the Drive",
+          "body": "Join YETI on the fast track to innovation — help us bring our student-built Formula race car to life with your support!",
+          "cta_button": { "label": "Back our team", "href": "/funding" },
+          "crowdfunding_link": "http://m-lp.co/yetiraci?utm_medium=whatsapp_status_message&utm_source=app"
+        }
+      }
+    },
+
+    "about": {
+      "url": "https://yetiracing.cusat.co.in/team",
+      "page_heading": "ABOUT US",
+      "founded_year": 2016,
+      "team_size": 50,
+      "university": "Cochin University of Science and Technology (CUSAT)",
+      "department": "School of Engineering",
+      "location": "Kochi, Kerala, India",
+      "description_paragraphs": [
+        "Founded in 2016, Yeti Racing is the official Formula Student team of the School of Engineering at Cochin University of Science and Technology (CUSAT). Comprising 50 passionate and skilled members, we are driven by a shared commitment to engineering excellence and innovation. Our team designs and builds high-performance race cars to compete in prestigious motorsport events such as FORMULA BHARAT, SAE SUPRA, FORMULA IMPERIAL and FFS INDIA.",
+        "At Formula Bharat 2025, held at Kari Motor Speedway, Coimbatore, Yeti Racing made history by becoming the first team from Kerala to win the championship title in the combustion category - a landmark achievement that underscores our dedication, technical expertise, and perseverance. The team secured overall rank 1 in endurance, efficiency, and dynamics.",
+        "Looking ahead, Yeti Racing is gearing up for exciting challenges at Formula Imperial 2025 and Formula Bharat 2026 with aspirations to push the boundaries of design and performance even further."
+      ],
+      "competitions_participated": [
+        "FORMULA BHARAT",
+        "SAE SUPRA",
+        "FORMULA IMPERIAL",
+        "FFS INDIA"
+      ],
+      "competition_external_links": [
+        { "name": "SAE Supra",      "url": "https://www.suprasaeindia.org/" },
+        { "name": "Formula Bharat", "url": "https://www.formulabharat.com/" },
+        { "name": "FFS India",      "url": "https://www.fmae.in/fmaeffsindia/" }
+      ],
+      "historic_milestone": "First team from Kerala to win Formula Bharat championship (combustion category) — Formula Bharat 2025 at Kari Motor Speedway, Coimbatore.",
+      "future_competitions": ["Formula Imperial 2025", "Formula Bharat 2026"],
+      "achievements": {
+        "anchor": "#achievements",
+        "competitions": [
+          {
+            "name": "Formula Bharat 2025",
+            "short": "FB 2025",
+            "venue": "Kari Motor Speedway, Coimbatore",
+            "results": [
+              { "category": "OVERALL",        "rank": 1 },
+              { "category": "DYNAMICS",       "rank": 1 },
+              { "category": "ENDURANCE RACE", "rank": 1 },
+              { "category": "EFFICIENCY",     "rank": 1 },
+              { "category": "Eng. DESIGN",    "rank": 7 }
+            ]
+          },
+          {
+            "name": "SAE SUPRA 2024",
+            "short": "SAE SUPRA 2024",
+            "results": [
+              { "category": "OVERALL",        "rank": 9 },
+              { "category": "COST & MFG",     "rank": 3 },
+              { "category": "ENDURANCE RACE", "rank": 6 }
+            ]
+          }
+        ]
+      }
+    },
+
+    "team_subsystem": {
+      "url": "https://yetiracing.cusat.co.in/subsystem",
+      "page_heading": "[24-25]",
+      "section_subtitle": "Executive Committee",
+      "section_tagline": "Guiding us beyond the finish line.",
+
+      "executive_committee": [
+        {
+          "name": "Dr Gireesh Kumaran",
+          "role": "Faculty Advisor",
+          "photo_url": "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-22%20at%2017.16.03_fdd35ac2.jpg?updatedAt=1740226522168",
+          "linkedin": "https://www.linkedin.com/in/gireesh-kumaran-thampi-b-s-6711253b"
+        },
+        {
+          "name": "Dr Biju N",
+          "role": "Faculty Advisor",
+          "photo_url": "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-08%20at%2020.28.26_a22c52b6.jpg?updatedAt=1739794940348",
+          "linkedin": "https://www.linkedin.com/in/biju-n-4287a9a"
+        },
+        {
+          "name": "Priyadarshi Dutt",
+          "role": "Faculty Advisor",
+          "photo_url": "https://ik.imagekit.io/r70knk9pu/Priyadarshi-Dutt-2.png?updatedAt=1739015920763",
+          "linkedin": "https://www.linkedin.com/in/priyadarshidutt/"
+        }
+      ],
+
+      "founders": {
+        "heading": "Our Founders",
+        "members": [
+          {
+            "name": "Atul J Meleth",
+            "role": "Team Manager",
+            "photo_url": "/assets/athul.jpeg",
+            "linkedin": "https://www.linkedin.com/in/atul-meleth/"
+          },
+          {
+            "name": "Ajanth V T",
+            "role": "Team Captain",
+            "photo_url": "/assets/avanath.jpeg",
+            "linkedin": "https://www.linkedin.com/in/ajanthvt/"
+          },
+          {
+            "name": "Kuriakose K Saju",
+            "role": "Vice Captain",
+            "photo_url": "/assets/kuriakose.jpeg",
+            "linkedin": "https://www.linkedin.com/in/kuriakose-k-saju"
+          }
+        ]
+      },
+
+      "season_2024_25": {
+        "heading": "[24-25]",
+        "leadership": [
+          {
+            "name": "Asif Ahammad H",
+            "role": "Captain",
+            "photo_url": "https://ik.imagekit.io/r70knk9pu/asif.jpg?updatedAt=1739005570560",
+            "linkedin": null
+          },
+          {
+            "name": "Abhijith Mohan",
+            "role": "Vice Captain",
+            "photo_url": "https://ik.imagekit.io/r70knk9pu/abhi.jpg?updatedAt=1739005570416",
+            "linkedin": "https://www.linkedin.com/in/abhijith-mohan-642205306"
+          }
+        ],
+        "management": [
+          {
+            "name": "Govind E S",
+            "role": "Manager",
+            "photo_url": "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-19%20at%2020.47.25_9472a724.jpg?updatedAt=1740051654881",
+            "linkedin": null
+          },
+          {
+            "name": "Devan P Das",
+            "role": "Manager",
+            "photo_url": "https://ik.imagekit.io/r70knk9pu/devan.jpg?updatedAt=1739005570408",
+            "linkedin": "https://www.linkedin.com/in/devanpdas"
+          },
+          {
+            "name": "Pavna Suresh",
+            "role": "Sponsorship",
+            "photo_url": "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-19%20at%2023.44.38_1792ae10.jpg?updatedAt=1740051655234",
+            "linkedin": null
+          },
+          {
+            "name": "Rohan Kalathil",
+            "role": "Procurement",
+            "photo_url": "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-19%20at%2020.47.25_8a249195.jpg?updatedAt=1740051654725",
+            "linkedin": "https://www.linkedin.com/in/rohan-kalathil-8004a71a0"
+          },
+          {
+            "name": "Nandu K Saju",
+            "role": "Manufacturing",
+            "photo_url": "https://ik.imagekit.io/r70knk9pu/nandhu.jpg?updatedAt=1739005570566",
+            "linkedin": "https://www.linkedin.com/in/nandhu-achari-3283791b3"
+          },
+          {
+            "name": "Ashwin S",
+            "role": "Treasurer",
+            "photo_url": "https://ik.imagekit.io/r70knk9pu/ashwins.jpg?updatedAt=1739005570483",
+            "linkedin": null
+          }
+        ],
+        "technical": [
+          {
+            "name": "Ashwin S",
+            "role": "Powertrain",
+            "subsystem": "Powertrain",
+            "photo_url": "https://ik.imagekit.io/r70knk9pu/ashwins.jpg?updatedAt=1739005570483",
+            "linkedin": "https://www.linkedin.com/in/ashwin-s-595a81319"
+          },
+          {
+            "name": "Vivek H",
+            "role": "Steering",
+            "subsystem": "Steering",
+            "photo_url": "https://ik.imagekit.io/r70knk9pu/vivek.jpg?updatedAt=1739005570491",
+            "linkedin": "https://www.linkedin.com/in/vivek-h-28aa26339"
+          },
+          {
+            "name": "Saif Ali K N",
+            "role": "Rollcage",
+            "subsystem": "Rollcage",
+            "photo_url": "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-19%20at%2020.47.25_98d6b650.jpg?updatedAt=1740051654412",
+            "linkedin": "https://www.linkedin.com/in/saif-ali-a24740244"
+          },
+          {
+            "name": "Aswin A",
+            "role": "Suspension",
+            "subsystem": "Suspension",
+            "photo_url": "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-19%20at%2020.47.26_ae756ec9.jpg?updatedAt=1740051654950",
+            "linkedin": "https://www.linkedin.com/in/aswin-a-3a87a7247"
+          },
+          {
+            "name": "Govind E S",
+            "role": "Brake",
+            "subsystem": "Brake",
+            "photo_url": "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-19%20at%2020.47.25_9472a724.jpg?updatedAt=1740051654881",
+            "linkedin": null
+          },
+          {
+            "name": "Lena Alingal",
+            "role": "Statics",
+            "subsystem": "Statics",
+            "photo_url": "assets/lena.webp",
+            "linkedin": "https://www.linkedin.com/in/lena-alingal-788751229"
+          },
+          {
+            "name": "Vishnu M Krishnan",
+            "role": "Media",
+            "subsystem": "Media",
+            "photo_url": "https://ik.imagekit.io/r70knk9pu/vishnu.jpg?updatedAt=1739005570487",
+            "linkedin": "https://www.linkedin.com/in/vishnumkrishnan"
+          }
+        ]
+      }
+    },
+
+    "gallery": {
+      "url": "https://yetiracing.cusat.co.in/gallery",
+      "photo_categories": [
+        { "name": "Formula Bharat '25", "filter": "fb25" },
+        { "name": "SAE Supra '24",      "filter": "supra24" }
+      ],
+      "media_coverage": [
+        {
+          "outlet": "The New Indian Express (TNIE)",
+          "headline": "Students from CUSAT win international formula race car making competition",
+          "url": "https://www.newindianexpress.com/states/kerala/2025/Jan/31/students-from-cusat-win-international-formula-race-car-making-competition"
+        },
+        {
+          "outlet": "Autocar India",
+          "headline": "Formula Bharat 2025: Yeti Racing, Team Kratos Racing Electric crowned winners",
+          "url": "https://www.autocarindia.com/motor-sports-news/formula-bharat-2025-yeti-racing-team-kratos-racing-electric-crowned-winners-434408"
+        },
+        {
+          "outlet": "The Hindu",
+          "headline": "Recognition for young talents at CUSAT",
+          "url": "https://www.thehindu.com/news/cities/Kochi/recognition-for-young-talents-at-cusat/article69151050.ece"
+        },
+        {
+          "outlet": "Mathrubhumi",
+          "headline": "അന്താരാഷ്ട്ര ഫോർമുല ഭാരത് മത്സരം കുസാറ്റിന് കിരീടം",
+          "headline_english": "International Formula Bharat race crown to CUSAT",
+          "url": "https://newspaper.mathrubhumi.com/ernakulam/news/ernakulam-1.10293480"
+        }
+      ]
+    },
+
+    "sponsors": {
+      "url": "https://yetiracing.cusat.co.in/sponsors",
+      "page_heading": "OUR SPONSORS",
+      "intro_paragraphs": [
+        "Yeti Racing is dedicated to pushing the limits of student innovation each year. As a non-profit student team, we deeply appreciate the invaluable support from generous companies and institutions.",
+        "We're constantly seeking new partners to join us on our journey, enabling us to focus on what we excel at: developing and advancing cutting-edge technology. Click the button below to become a part of our mission to rank among the top Formula Student teams globally."
+      ],
+      "cta_buttons": [
+        { "label": "Back Our Team", "href": "/funding" },
+        { "label": "Sponsorship",   "href": "#footer" }
+      ],
+      "sponsors_list": [
+        {
+          "id": "santaMonica",
+          "name": "Santa Monica",
+          "logo_asset": "/assets/santa.png",
+          "website": "https://santamonicaedu.in/",
+          "category": "Education / Study Abroad",
+          "founded": 2002,
+          "description": "Santa Monica Study Abroad, founded in 2002, is a leading educational consultancy that helps students pursue higher education opportunities overseas. With over two decades of experience, they provide expert guidance on university selection, visa processes, and scholarship options, making the study abroad journey smooth and hassle-free."
+        },
+        {
+          "id": "dtsRacing",
+          "name": "DTS Racing",
+          "logo_asset": "/assets/dts.jpg",
+          "website": "https://dtsracing.com/",
+          "category": "Motorsports",
+          "founded": 2015,
+          "founder": "Dilljith T S (National & International Champion)",
+          "parent_company": "DTSR Academy Pvt Ltd",
+          "description": "DTS Racing, founded in 2015 by National and International Champion Dilljith T S, is a prominent motorsports team in India dedicated to promoting motorsports among the younger generation. As part of DTSR Academy Pvt Ltd, the team has quickly risen to become one of India's top national and international racing teams."
+        },
+        {
+          "id": "edstech",
+          "name": "EDS Technologies",
+          "logo_asset": "/assets/eds-logo.png",
+          "website": "https://edstechnologies.com/",
+          "category": "Engineering Software (CAD/CAM/CAE)",
+          "description": "EDS Technologies is one of India's leading providers of engineering and enterprise solutions. The company specializes in offering end-to-end solutions in areas such as CAD, CAM, CAE and 3D visual simulation. EDS Technologies serves a wide range of industries, including automotive, aerospace, defense, education, industrial machinery, and electronics."
+        },
+        {
+          "id": "helloscore",
+          "name": "Helloscore",
+          "logo_asset": "/assets/helloscore-logo.png",
+          "website": "https://helloscore.in/",
+          "category": "Finance / Credit Management",
+          "parent_company": "Analyct Group of Companies",
+          "description": "Helloscore, a subsidiary of the esteemed Analyct Group of Companies, is a premier financial services provider dedicated to empowering individuals and businesses with tailored credit solutions. Helloscore specializes in comprehensive credit management services, credit score improvement, credit monitoring, debt settlement, and wealth management."
+        },
+        {
+          "id": "tyreguru",
+          "name": "TyreGuru",
+          "logo_asset": "/assets/tyreguru.png",
+          "website": "https://www.instagram.com/tyreguru.in/?hl=en",
+          "category": "Automotive (Tyre Education)",
+          "years_experience": 20,
+          "description": "Tyreguru provides expert advice and education about tyres, drawing on over 20 years of experience in the industry and assisting consumers in making informed decisions. With engaging content like reels addressing tyre scams and maintenance tips, the page aims to raise awareness and transform the automotive industry through smarter choices. Tyreguru emphasises customer education and offers personalised assistance."
+        },
+        {
+          "id": "wrapstyle",
+          "name": "WrapStyle",
+          "logo_asset": "/assets/wrapstyle.png",
+          "website": "https://wrapstyle.com/",
+          "category": "Automotive Customization",
+          "description": "WrapStyle is a premier automotive customization company specializing in high-quality vehicle wraps and aesthetic modifications. With a commitment to excellence and innovation, they transform vehicles through state-of-the-art wrapping techniques and custom designs. Their expertise extends to paint protection films, ceramic coatings, and premium detailing services, making them a one-stop destination for automotive enthusiasts seeking to enhance their vehicles' appearance and protection."
+        }
+      ]
+    },
+
+    "funding": {
+      "url": "https://yetiracing.cusat.co.in/funding",
+      "page_heading": "Fuel Our Passion: Help Us Build the Next Generation of Formula Racing!",
+      "platform": "Milaap",
+      "crowdfunding_link": "http://m-lp.co/yetiraci?utm_medium=whatsapp_status_message&utm_source=app",
+      "qr_note": "Pay using this QR code 💰",
+      "progress_percent": 75
+    }
+  },
+
+  "footer": {
+    "brand_name": "Yeti Racing CUSAT",
+    "logo_url": "https://ik.imagekit.io/r70knk9pu/logo1.png?updatedAt=1739006550479",
+    "quick_links": [
+      { "label": "Team",       "href": "/subsystem" },
+      { "label": "Gallery",    "href": "/gallery" },
+      { "label": "About us",   "href": "/team" },
+      { "label": "Sponsors",   "href": "/sponsors" },
+      { "label": "Contact us", "href": "/" }
+    ],
+    "contact_persons": [
+      {
+        "name": "NANDHU K SAJI",
+        "display_phone": "+91 81390 02569",
+        "tel_href": "tel:+916238118843"
+      },
+      {
+        "name": "JISHNU BABU",
+        "display_phone": "+91 89214 83956",
+        "tel_href": "tel:+918547177020"
+      }
+    ],
+    "email": "yetiracingsoe@gmail.com",
+    "social_links": [
+      {
+        "platform": "Email",
+        "url": "mailto:yetiracingsoe@gmail.com",
+        "handle": "yetiracingsoe@gmail.com"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/yetiracing_cusat/",
+        "handle": "@yetiracing_cusat"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://in.linkedin.com/company/yetiracing-cusat",
+        "handle": "yetiracing-cusat"
+      },
+      {
+        "platform": "Google Maps",
+        "url": "https://www.google.co.in/maps/place/SAE+LAB+CUSAT/@10.0473925,76.3299883,19z",
+        "label": "SAE LAB CUSAT"
+      }
+    ],
+    "location": {
+      "name": "SAE LAB, School of Engineering, CUSAT",
+      "coordinates": { "lat": 10.0475166, "lng": 76.3312228 },
+      "google_maps_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.618667966787!2d76.32889797507872!3d10.048292090059604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c3a571be335%3A0xe9d0d17ee3a87389!2sSchool%20of%20Engineering%2C%20CUSAT!5e0!3m2!1sen!2sin!4v1735200976648!5m2!1sen!2sin",
+      "full_maps_link": "https://www.google.co.in/maps/place/SAE+LAB+CUSAT/@10.0473925,76.3299883,19z/data=!4m9!1m2!2m1!1sthermal+lab+cusat!3m5!1s0x3b080d0077994cfb:0x95f17e78871b8912!8m2!3d10.0475166!4d76.3312228!16s%2Fg%2F11w3gmhjgj"
+    },
+    "credits": {
+      "label": "Made by ANJALI & OMKAR",
+      "developers": [
+        { "name": "ANJALI", "linkedin": "https://www.linkedin.com/in/anjali-georance-61b017275/" },
+        { "name": "OMKAR",  "linkedin": "https://www.linkedin.com/in/omkar-deepak-623a55293/" }
+      ]
+    }
+  },
+
+  "design_system": {
+    "color_palette": {
+      "primary_red":    "#dc2626",
+      "dark_bg":        "#0a0a0a",
+      "neutral_950":    "#0a0a0a",
+      "red_900":        "#7f1d1d",
+      "amber_500":      "#f59e0b",
+      "green_400":      "#4ade80",
+      "text_primary":   "#f8fafc",
+      "text_secondary": "#d1d5db"
+    },
+    "gradients": {
+      "hero_bg":      "from-red-900 via-neutral-950 to-neutral-950",
+      "about_bg":     "from-red-900 via-neutral-950 to-neutral-950",
+      "team_bg":      "from-black to-red-700",
+      "sponsors_bg":  "from-black to-red-900",
+      "rank_text":    "from-gray-400 to-amber-200"
+    },
+    "dot_grid_pattern": {
+      "css": "background: radial-gradient(#d3d3d3 1px, transparent 1px); background-size: 36px 36px; mask-image: radial-gradient(50% 50% at 50% 50%, #000 15%, transparent 100%);"
+    },
+    "fonts": {
+      "Orbitron":  "nav items, role labels, button text, section sub-headings",
+      "ZenDots":   "primary hero and page headings",
+      "Rajdhani":  "body paragraphs and descriptions",
+      "Goldman":   "footer credits text"
+    },
+    "button_style": {
+      "base":  "rounded-full, border-2, border-green-400, bg-transparent, text-white",
+      "hover": "scale-105, shadow-[0_0_20px_rgba(34,197,94,0.7)]"
+    },
+    "member_card": {
+      "photo_shape": "circle (rounded-full)",
+      "photo_border": "2px white",
+      "photo_shadow": "shadow-green-600/100 (5px 5px 0 rgba(0,0,0,1))",
+      "name_font": "font-Fn (gray-100)",
+      "role_font": "font-Orbitron (gray-200)"
+    },
+    "animations": [
+      "animate-bounce — section headings",
+      "animate-pulse  — sponsor name headings",
+      "hover:scale-105 / hover:scale-110 — links, buttons, nav items, photos"
+    ]
+  },
+
+  "image_assets": {
+    "logos": {
+      "logo1_png":  "https://ik.imagekit.io/r70knk9pu/logo1.png?updatedAt=1739006550479",
+      "logo2_webp": "https://yetiracing.cusat.co.in/assets/logo2.webp"
+    },
+    "achievement_star": "/assets/1st.png",
+    "faculty_photos": {
+      "gireesh_kumaran":  "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-22%20at%2017.16.03_fdd35ac2.jpg?updatedAt=1740226522168",
+      "biju_n":           "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-08%20at%2020.28.26_a22c52b6.jpg?updatedAt=1739794940348",
+      "priyadarshi_dutt": "https://ik.imagekit.io/r70knk9pu/Priyadarshi-Dutt-2.png?updatedAt=1739015920763"
+    },
+    "founder_photos": {
+      "atul_meleth":   "/assets/athul.jpeg",
+      "ajanth_vt":     "/assets/avanath.jpeg",
+      "kuriakose_saju":"/assets/kuriakose.jpeg"
+    },
+    "team_2425_photos": {
+      "asif":      "https://ik.imagekit.io/r70knk9pu/asif.jpg?updatedAt=1739005570560",
+      "abhijith":  "https://ik.imagekit.io/r70knk9pu/abhi.jpg?updatedAt=1739005570416",
+      "govind":    "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-19%20at%2020.47.25_9472a724.jpg?updatedAt=1740051654881",
+      "devan":     "https://ik.imagekit.io/r70knk9pu/devan.jpg?updatedAt=1739005570408",
+      "ashwin":    "https://ik.imagekit.io/r70knk9pu/ashwins.jpg?updatedAt=1739005570483",
+      "vivek":     "https://ik.imagekit.io/r70knk9pu/vivek.jpg?updatedAt=1739005570491",
+      "saif_ali":  "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-19%20at%2020.47.25_98d6b650.jpg?updatedAt=1740051654412",
+      "aswin_a":   "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-19%20at%2020.47.26_ae756ec9.jpg?updatedAt=1740051654950",
+      "lena":      "assets/lena.webp",
+      "vishnu":    "https://ik.imagekit.io/r70knk9pu/vishnu.jpg?updatedAt=1739005570487",
+      "pavna":     "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-19%20at%2023.44.38_1792ae10.jpg?updatedAt=1740051655234",
+      "rohan":     "https://ik.imagekit.io/r70knk9pu/WhatsApp%20Image%202025-02-19%20at%2020.47.25_8a249195.jpg?updatedAt=1740051654725",
+      "nandu":     "https://ik.imagekit.io/r70knk9pu/nandhu.jpg?updatedAt=1739005570566"
+    },
+    "sponsor_logos": {
+      "santa_monica":    "/assets/santa.png",
+      "dts_racing":      "/assets/dts.jpg",
+      "eds_technologies":"/assets/eds-logo.png",
+      "helloscore":      "/assets/helloscore-logo.png",
+      "tyreguru":        "/assets/tyreguru.png",
+      "wrapstyle":       "/assets/wrapstyle.png"
+    },
+    "icon_sources": {
+      "email_icon":     "https://clipartcraft.com/images/email-logo-png-gmail.png",
+      "instagram_icon": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Instagram_Logo_png.png",
+      "linkedin_icon":  "https://www.freepnglogos.com/uploads/official-linkedin-logo----17.png",
+      "maps_icon":      "https://www.pngall.com/wp-content/uploads/5/Google-Maps-Location-Mark.png",
+      "linkedin_svg":   "https://www.svgrepo.com/show/349436/linkedin.svg"
+    }
+  }
+}

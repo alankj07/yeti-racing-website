@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yeti Racing | Formula Student Team — CUSAT</title>
+  <meta name="description" content="Yeti Racing is the official Formula Student team of the School of Engineering at CUSAT. Formula Bharat 2025 Champions — First team from Kerala to win."/>
+  <meta property="og:title" content="Yeti Racing | CUSAT"/>
+  <meta property="og:description" content="Formula Bharat 2025 Champions. First team from Kerala to win the championship in the combustion category."/>
+  <meta property="og:image" content="https://yetiracing.cusat.co.in/assets/logo2.webp"/>
+  <meta property="og:type" content="website"/>
+  <link rel="icon" href="https://ik.imagekit.io/r70knk9pu/logo1.png?updatedAt=1739006550479"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <!-- Removed car-animation.css -->
+</head>
+<body>
+
+<!-- ░░ LOADING SCREEN ░░ -->
+<div id="loader">
+  <div class="loader-logo"><span>Y</span>eti Racing</div>
+  <div class="loader-track"><div class="loader-fill"></div></div>
+  <div class="loader-pct">0%</div>
+</div>
+
+<!-- ░░ PARTICLES ░░ -->
+<canvas id="particles"></canvas>
+
+<!-- ░░ CURSOR ░░ -->
+<div class="c-dot"></div>
+<div class="c-ring"></div>
+
+<!-- ════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════ -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="https://ik.imagekit.io/r70knk9pu/logo1.png?updatedAt=1739006550479" alt="Yeti Racing Logo"/>
+    <div class="nav-logo-text">
+      <span class="nav-logo-name"><span>Y</span>eti Racing</span>
+      <span class="nav-logo-sub">CUSAT · Formula Student</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="sponsors.html">Sponsors</a></li>
+    <li><a href="funding.html" class="nav-cta">Support Us</a></li>
+  </ul>
+  <div class="ham" id="ham"><span></span><span></span><span></span></div>
+</nav>
+<nav class="mob-menu" id="mobMenu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="sponsors.html">Sponsors</a></li>
+    <li><a href="funding.html">Support Us</a></li>
+  </ul>
+</nav>
+
+<!-- ════════════════════════════════════════
+     HERO SECTION
+════════════════════════════════════════ -->
+<div class="hero-wrap" style="height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #000;">
+  
+  <!-- Background Image & Gradients -->
+  <div style="position: absolute; inset: 0; z-index: 1;">
+    <img src="https://yetiracing.cusat.co.in/_next/static/media/hindu.5e0f629f.jpg" 
+         alt="Yeti Racing Formula Bharat 2025 Car" 
+         style="width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0.7; animation: scaleIn 20s ease-out forwards;" />
+    <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, var(--bg) 100%);"></div>
+    <div style="position: absolute; inset: 0; background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.7) 100%);"></div>
+    <div class="hero-grid" style="opacity: 0.6;"></div>
+  </div>
+
+  <!-- Hero Text -->
+  <div class="hero-over" style="position: relative; z-index: 5; text-align: center; opacity: 1; transform: translateY(0); pointer-events: auto;">
+    <span class="h-tag" style="opacity: 1; transform: translateY(0); animation: fadeIn 1s ease 0.4s both;">Formula Student · CUSAT · School of Engineering</span>
+    <h1 class="h-title" style="opacity: 1; transform: translateY(0); animation: slideUp 1s ease 0.6s both;"><span>Y</span>eti Racing</h1>
+    <p class="h-sub" style="opacity: 1; transform: translateY(0); animation: fadeIn 1s ease 0.9s both;">Formula Bharat 2025 Champions &nbsp;·&nbsp; First from Kerala</p>
+    
+    <div style="margin-top: 40px; display: flex; gap: 16px; justify-content: center; animation: fadeIn 1s ease 1.2s both;">
+      <a href="about.html" class="btn btn-red">Discover Our Story <span class="btn-icon">→</span></a>
+      <a href="team.html" class="btn btn-ghost">Meet The Team</a>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-ind" style="bottom: 40px; z-index: 10;">
+    <div class="scroll-line"></div>
+    <span class="scroll-txt">Scroll</span>
+  </div>
+
+  <style>
+    @keyframes scaleIn {
+      from { transform: scale(1.15); }
+      to { transform: scale(1); }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</div><!-- /hero-wrap -->
+
+<!-- ════════════════════════════════════════
+     CHAMPION TICKER BAND
+════════════════════════════════════════ -->
+<div class="champ-band">
+  <div class="champ-inner">
+    <span class="champ-item">🏆 Formula Bharat 2025 Champions</span>
+    <span class="champ-sep">◆</span>
+    <span class="champ-item">🥇 Overall Rank 1</span>
+    <span class="champ-sep">◆</span>
+    <span class="champ-item">🥇 Endurance Rank 1</span>
+    <span class="champ-sep">◆</span>
+    <span class="champ-item">🥇 Dynamics Rank 1</span>
+    <span class="champ-sep">◆</span>
+    <span class="champ-item">🥇 Efficiency Rank 1</span>
+    <span class="champ-sep">◆</span>
+    <span class="champ-item">First Kerala Team to Win Formula Bharat</span>
+    <span class="champ-sep">◆</span>
+    <span class="champ-item">🏆 Formula Bharat 2025 Champions</span>
+    <span class="champ-sep">◆</span>
+    <span class="champ-item">🥇 Overall Rank 1</span>
+    <span class="champ-sep">◆</span>
+    <span class="champ-item">🥇 Endurance Rank 1</span>
+    <span class="champ-sep">◆</span>
+    <span class="champ-item">🥇 Dynamics Rank 1</span>
+    <span class="champ-sep">◆</span>
+    <span class="champ-item">🥇 Efficiency Rank 1</span>
+    <span class="champ-sep">◆</span>
+    <span class="champ-item">First Kerala Team to Win Formula Bharat</span>
+    <span class="champ-sep">◆</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     STATS BAR
+════════════════════════════════════════ -->
+<section class="stats-band">
+  <div class="stats-inner">
+    <div class="rev">
+      <span class="stat-n" data-count="50" data-suffix="+">0+</span>
+      <span class="stat-l">Team Members</span>
+    </div>
+    <div class="rev d1">
+      <span class="stat-n" data-count="9" data-suffix="">0</span>
+      <span class="stat-l">Years of Excellence</span>
+    </div>
+    <div class="rev d2">
+      <span class="stat-n" data-count="4" data-suffix="×">0×</span>
+      <span class="stat-l">Rank 1 at FB 2025</span>
+    </div>
+    <div class="rev d3">
+      <span class="stat-n" data-count="1" data-suffix="st">0st</span>
+      <span class="stat-l">Kerala Team Champion</span>
+    </div>
+  </div>
+</section>
+
+<div class="line-accent"></div>
+
+<!-- ════════════════════════════════════════
+     ABOUT PREVIEW
+════════════════════════════════════════ -->
+<section class="about-sec">
+  <div class="about-inner">
+    <div class="about-content">
+      <span class="eyebrow rev">Who We Are</span>
+      <h2 class="about-h1 rev d1">Engineering <span>Excellence</span><br/>Redefined</h2>
+      <p class="about-p rev d2">
+        Founded in 2016, Yeti Racing is the official Formula Student team of the School of Engineering at Cochin University of Science and Technology (CUSAT). With 50 driven members, we design and build high-performance Formula race cars to compete at the highest level.
+      </p>
+      <p class="about-p rev d3" style="margin-top:10px;">
+        At Formula Bharat 2025, held at Kari Motor Speedway, Coimbatore, we made history by becoming the <strong style="color:#fff;">first team from Kerala</strong> to win the championship title in the combustion category.
+      </p>
+      <div class="about-features">
+        <div class="af-item rev d3">
+          <span class="af-icon">🏎</span>
+          <div class="af-text">
+            <strong>Competitions</strong>
+            <p>Formula Bharat · SAE SUPRA · Formula Imperial · FFS India</p>
+          </div>
+        </div>
+        <div class="af-item rev d4">
+          <span class="af-icon">🏆</span>
+          <div class="af-text">
+            <strong>Formula Bharat 2025 — 4× Rank 1</strong>
+            <p>Overall · Endurance · Dynamics · Efficiency</p>
+          </div>
+        </div>
+        <div class="af-item rev d5">
+          <span class="af-icon">🔬</span>
+          <div class="af-text">
+            <strong>Next Challenge</strong>
+            <p>Formula Imperial 2025 &amp; Formula Bharat 2026</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-btns rev d5">
+        <a href="about.html" class="btn btn-red">Our Story <span class="btn-icon">→</span></a>
+        <a href="team.html"  class="btn btn-ghost">Meet the Team</a>
+      </div>
+    </div>
+
+    <div class="about-visual rev-r">
+      <div class="about-img-frame">
+        <img src="https://ik.imagekit.io/r70knk9pu/mayur_6.1-08.jpg?updatedAt=1739021321620"
+             alt="Yeti Racing Vehicle at Formula Bharat" loading="lazy"/>
+      </div>
+      <div class="about-badge">
+        <span class="badge-n">9</span>
+        <span class="badge-l">Years of Racing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="line-accent"></div>
+
+<!-- ════════════════════════════════════════
+     ACHIEVEMENTS
+════════════════════════════════════════ -->
+<section class="ach-sec">
+  <div class="sec-head">
+    <span class="eyebrow rev">Track Record</span>
+    <h2 class="sec-title rev d1">Our <span>Achievements</span></h2>
+    <p class="sec-sub rev d2">From podium finishes to championship glory — our results speak for themselves.</p>
+    <div class="divider rev d3"></div>
+  </div>
+
+  <div class="ach-grid max-w">
+    <!-- FB 2025 -->
+    <div class="ach-card rev">
+      <div class="ach-yr">January 2025 · Coimbatore</div>
+      <div class="ach-name">Formula Bharat 2025</div>
+      <div class="ach-venue">Kari Motor Speedway · Combustion Category</div>
+      <div class="ach-rows">
+        <div class="ach-row"><span class="ach-cat">Overall</span>      <span class="ach-rank r1">🥇 1st</span></div>
+        <div class="ach-row"><span class="ach-cat">Endurance Race</span><span class="ach-rank r1">🥇 1st</span></div>
+        <div class="ach-row"><span class="ach-cat">Dynamics</span>     <span class="ach-rank r1">🥇 1st</span></div>
+        <div class="ach-row"><span class="ach-cat">Efficiency</span>   <span class="ach-rank r1">🥇 1st</span></div>
+        <div class="ach-row"><span class="ach-cat">Eng. Design</span>  <span class="ach-rank">7th</span></div>
+      </div>
+    </div>
+
+    <!-- SAE SUPRA 2024 -->
+    <div class="ach-card rev d2">
+      <div class="ach-yr">2024</div>
+      <div class="ach-name">SAE SUPRA 2024</div>
+      <div class="ach-venue">National Formula Student Championship</div>
+      <div class="ach-rows">
+        <div class="ach-row"><span class="ach-cat">Overall</span>    <span class="ach-rank">9th</span></div>
+        <div class="ach-row"><span class="ach-cat">Cost &amp; Mfg</span><span class="ach-rank r3">🥉 3rd</span></div>
+        <div class="ach-row"><span class="ach-cat">Endurance</span> <span class="ach-rank">6th</span></div>
+      </div>
+    </div>
+
+    <!-- FFS India 2017 -->
+    <div class="ach-card rev d3">
+      <div class="ach-yr">2017 · Debut Season</div>
+      <div class="ach-name">FFS India 2017</div>
+      <div class="ach-venue">First competitive outing for Yeti Racing</div>
+      <div class="ach-rows">
+        <div class="ach-row"><span class="ach-cat">Overall</span><span class="ach-rank">7th</span></div>
+        <div class="ach-row"><span class="ach-cat">Design</span> <span class="ach-rank">4th</span></div>
+        <div class="ach-row"><span class="ach-cat">Sales</span>  <span class="ach-rank">5th</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="line-accent"></div>
+
+<!-- ════════════════════════════════════════
+     SPONSORS TICKER
+════════════════════════════════════════ -->
+<section class="sp-ticker-sec">
+  <p class="sp-ticker-label">Backed By Industry Leaders</p>
+  <div style="overflow:hidden;">
+    <div class="sp-track">
+      <!-- Set 1 -->
+      <div class="sp-logo-item"><span class="sp-logo-name">Santa Monica</span></div>
+      <div class="sp-logo-item"><span class="sp-logo-name">DTS Racing</span></div>
+      <div class="sp-logo-item"><span class="sp-logo-name">EDS Technologies</span></div>
+      <div class="sp-logo-item"><span class="sp-logo-name">Helloscore</span></div>
+      <div class="sp-logo-item"><span class="sp-logo-name">TyreGuru</span></div>
+      <div class="sp-logo-item"><span class="sp-logo-name">WrapStyle</span></div>
+      <!-- Set 2 (duplicate for seamless loop) -->
+      <div class="sp-logo-item"><span class="sp-logo-name">Santa Monica</span></div>
+      <div class="sp-logo-item"><span class="sp-logo-name">DTS Racing</span></div>
+      <div class="sp-logo-item"><span class="sp-logo-name">EDS Technologies</span></div>
+      <div class="sp-logo-item"><span class="sp-logo-name">Helloscore</span></div>
+      <div class="sp-logo-item"><span class="sp-logo-name">TyreGuru</span></div>
+      <div class="sp-logo-item"><span class="sp-logo-name">WrapStyle</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     CTA BAND
+════════════════════════════════════════ -->
+<section class="cta-sec">
+  <div class="cta-inner">
+    <h2 class="cta-title rev">Join the Drive</h2>
+    <p class="cta-sub rev d1">
+      Help us bring our student-built Formula race car to life. Your support fuels innovation, engineering, and championship ambitions. Be part of the journey.
+    </p>
+    <div class="cta-btns rev d2">
+      <a href="funding.html"  class="btn btn-white">Back Our Team <span class="btn-icon">→</span></a>
+      <a href="sponsors.html" class="btn btn-ghost">View Sponsors</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer class="footer" id="footer">
+  <div class="footer-top">
+    <!-- Brand -->
+    <div>
+      <a href="index.html" class="nav-logo" style="margin-bottom:18px; display:inline-flex;">
+        <img src="https://ik.imagekit.io/r70knk9pu/logo1.png?updatedAt=1739006550479" alt="Yeti Racing" style="height:44px;width:auto;"/>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name"><span>Y</span>eti Racing</span>
+          <span class="nav-logo-sub">CUSAT</span>
+        </div>
+      </a>
+      <p class="f-brand-desc">The official Formula Student team of the School of Engineering at Cochin University of Science and Technology. Formula Bharat 2025 Champions.</p>
+      <div class="f-social">
+        <a href="https://www.instagram.com/yetiracing_cusat/" target="_blank" class="f-soc-btn" title="Instagram">📸</a>
+        <a href="https://in.linkedin.com/company/yetiracing-cusat"  target="_blank" class="f-soc-btn" title="LinkedIn">💼</a>
+        <a href="mailto:yetiracingsoe@gmail.com" class="f-soc-btn" title="Email">✉️</a>
+        <a href="https://www.google.co.in/maps/place/SAE+LAB+CUSAT" target="_blank" class="f-soc-btn" title="Location">📍</a>
+      </div>
+    </div>
+
+    <!-- Quick links -->
+    <div>
+      <h5 class="f-col-title">Navigation</h5>
+      <ul class="f-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="funding.html">Support Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h5 class="f-col-title">Contact Us</h5>
+      <div class="f-contact-item">
+        <span class="f-c-name">Nandhu K Saji</span>
+        <a href="tel:+916238118843" class="f-c-val">+91 81390 02569</a>
+      </div>
+      <div class="f-contact-item">
+        <span class="f-c-name">Jishnu Babu</span>
+        <a href="tel:+918547177020" class="f-c-val">+91 89214 83956</a>
+      </div>
+      <div class="f-contact-item">
+        <span class="f-c-name">Email</span>
+        <a href="mailto:yetiracingsoe@gmail.com" class="f-c-val">yetiracingsoe@gmail.com</a>
+      </div>
+    </div>
+
+    <!-- Location -->
+    <div>
+      <h5 class="f-col-title">Location</h5>
+      <p style="font-family:var(--f-body);font-size:0.95rem;color:var(--txt3);line-height:1.7;">
+        SAE LAB, School of Engineering<br/>
+        CUSAT, Kalamassery<br/>
+        Kochi, Kerala — 682 022
+      </p>
+      <a href="https://www.google.co.in/maps/place/SAE+LAB+CUSAT" target="_blank"
+         class="btn btn-ghost" style="margin-top:18px; font-size:0.65rem; padding:10px 20px;">
+        View on Maps
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="f-copy">© 2025 Yeti Racing CUSAT. All rights reserved.</span>
+    <span class="f-made">Made by <a href="https://www.linkedin.com/in/anjali-georance-61b017275/" target="_blank">Anjali</a> &amp; <a href="https://www.linkedin.com/in/omkar-deepak-623a55293/" target="_blank">Omkar</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
